@@ -1,0 +1,7 @@
+S:\Coding\Projects\cs392-team\8.3 Sentence Capitalizer\bin\Debug\8.3 Sentence Capitalizer.exe.config
+S:\Coding\Projects\cs392-team\8.3 Sentence Capitalizer\bin\Debug\8.3 Sentence Capitalizer.exe
+S:\Coding\Projects\cs392-team\8.3 Sentence Capitalizer\bin\Debug\8.3 Sentence Capitalizer.pdb
+S:\Coding\Projects\cs392-team\8.3 Sentence Capitalizer\obj\Debug\8.3 Sentence Capitalizer.csproj.AssemblyReference.cache
+S:\Coding\Projects\cs392-team\8.3 Sentence Capitalizer\obj\Debug\8.3 Sentence Capitalizer.csproj.CoreCompileInputs.cache
+S:\Coding\Projects\cs392-team\8.3 Sentence Capitalizer\obj\Debug\8.3 Sentence Capitalizer.exe
+S:\Coding\Projects\cs392-team\8.3 Sentence Capitalizer\obj\Debug\8.3 Sentence Capitalizer.pdb

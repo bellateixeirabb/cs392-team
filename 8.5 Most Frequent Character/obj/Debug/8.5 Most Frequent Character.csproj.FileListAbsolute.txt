@@ -1,0 +1,7 @@
+S:\Coding\Projects\cs392-team\8.5 Most Frequent Character\bin\Debug\8.5 Most Frequent Character.exe.config
+S:\Coding\Projects\cs392-team\8.5 Most Frequent Character\bin\Debug\8.5 Most Frequent Character.exe
+S:\Coding\Projects\cs392-team\8.5 Most Frequent Character\bin\Debug\8.5 Most Frequent Character.pdb
+S:\Coding\Projects\cs392-team\8.5 Most Frequent Character\obj\Debug\8.5 Most Frequent Character.csproj.AssemblyReference.cache
+S:\Coding\Projects\cs392-team\8.5 Most Frequent Character\obj\Debug\8.5 Most Frequent Character.csproj.CoreCompileInputs.cache
+S:\Coding\Projects\cs392-team\8.5 Most Frequent Character\obj\Debug\8.5 Most Frequent Character.exe
+S:\Coding\Projects\cs392-team\8.5 Most Frequent Character\obj\Debug\8.5 Most Frequent Character.pdb

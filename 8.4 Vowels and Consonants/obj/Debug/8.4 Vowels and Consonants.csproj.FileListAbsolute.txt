@@ -1,0 +1,7 @@
+S:\Coding\Projects\cs392-team\8.4 Vowels and Consonants\bin\Debug\8.4 Vowels and Consonants.exe.config
+S:\Coding\Projects\cs392-team\8.4 Vowels and Consonants\bin\Debug\8.4 Vowels and Consonants.exe
+S:\Coding\Projects\cs392-team\8.4 Vowels and Consonants\bin\Debug\8.4 Vowels and Consonants.pdb
+S:\Coding\Projects\cs392-team\8.4 Vowels and Consonants\obj\Debug\8.4 Vowels and Consonants.csproj.AssemblyReference.cache
+S:\Coding\Projects\cs392-team\8.4 Vowels and Consonants\obj\Debug\8.4 Vowels and Consonants.csproj.CoreCompileInputs.cache
+S:\Coding\Projects\cs392-team\8.4 Vowels and Consonants\obj\Debug\8.4 Vowels and Consonants.exe
+S:\Coding\Projects\cs392-team\8.4 Vowels and Consonants\obj\Debug\8.4 Vowels and Consonants.pdb
