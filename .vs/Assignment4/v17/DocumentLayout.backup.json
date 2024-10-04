@@ -1,17 +1,23 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "S:\\Coding\\Projects\\cs392-team\\",
+  "WorkspaceRootPath": "C:\\Users\\USISTEI\\source\\repos\\cs392-team\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{819C6CA4-6A3D-4E41-B2A6-C694600DE201}|8.5 Most Frequent Character\\8.5 Most Frequent Character.csproj|s:\\coding\\projects\\cs392-team\\8.5 most frequent character\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E7957FE9-E58C-4EFD-8FC6-3F3E3FB8268C}|..\\..\\..\\Downloads\\Assignment4\\prob7.4\\prob7.4.csproj|c:\\users\\usistei\\downloads\\assignment4\\prob7.4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7957FE9-E58C-4EFD-8FC6-3F3E3FB8268C}|..\\..\\..\\Downloads\\Assignment4\\prob7.4\\prob7.4.csproj|c:\\users\\usistei\\downloads\\assignment4\\prob7.4\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{819C6CA4-6A3D-4E41-B2A6-C694600DE201}|8.5 Most Frequent Character\\8.5 Most Frequent Character.csproj|c:\\users\\usistei\\source\\repos\\cs392-team\\8.5 most frequent character\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{819C6CA4-6A3D-4E41-B2A6-C694600DE201}|8.5 Most Frequent Character\\8.5 Most Frequent Character.csproj|solutionrelative:8.5 most frequent character\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22C4CEC6-74BE-48B5-A6D1-1E6D9A5B04BF}|8.4 Vowels and Consonants\\8.4 Vowels and Consonants.csproj|s:\\coding\\projects\\cs392-team\\8.4 vowels and consonants\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{22C4CEC6-74BE-48B5-A6D1-1E6D9A5B04BF}|8.4 Vowels and Consonants\\8.4 Vowels and Consonants.csproj|C:\\Users\\USISTEI\\source\\repos\\cs392-team\\8.4 vowels and consonants\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22C4CEC6-74BE-48B5-A6D1-1E6D9A5B04BF}|8.4 Vowels and Consonants\\8.4 Vowels and Consonants.csproj|solutionrelative:8.4 vowels and consonants\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C976CF2-E58C-4C7B-B765-1999A100FFB4}|8.3 Sentence Capitalizer\\8.3 Sentence Capitalizer.csproj|s:\\coding\\projects\\cs392-team\\8.3 sentence capitalizer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0C976CF2-E58C-4C7B-B765-1999A100FFB4}|8.3 Sentence Capitalizer\\8.3 Sentence Capitalizer.csproj|C:\\Users\\USISTEI\\source\\repos\\cs392-team\\8.3 sentence capitalizer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C976CF2-E58C-4C7B-B765-1999A100FFB4}|8.3 Sentence Capitalizer\\8.3 Sentence Capitalizer.csproj|solutionrelative:8.3 sentence capitalizer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,28 +28,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\USISTEI\\Downloads\\Assignment4\\prob7.4\\Form1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Assignment4\\prob7.4\\Form1.cs",
+              "ToolTip": "C:\\Users\\USISTEI\\Downloads\\Assignment4\\prob7.4\\Form1.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Assignment4\\prob7.4\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T17:21:30.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\USISTEI\\Downloads\\Assignment4\\prob7.4\\Form1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Assignment4\\prob7.4\\Form1.cs",
+              "ToolTip": "C:\\Users\\USISTEI\\Downloads\\Assignment4\\prob7.4\\Form1.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Assignment4\\prob7.4\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-01T17:21:20.503Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "S:\\Coding\\Projects\\cs392-team\\8.5 Most Frequent Character\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\USISTEI\\source\\repos\\cs392-team\\8.5 Most Frequent Character\\Program.cs",
               "RelativeDocumentMoniker": "8.5 Most Frequent Character\\Program.cs",
-              "ToolTip": "S:\\Coding\\Projects\\cs392-team\\8.5 Most Frequent Character\\Program.cs",
+              "ToolTip": "C:\\Users\\USISTEI\\source\\repos\\cs392-team\\8.5 Most Frequent Character\\Program.cs",
               "RelativeToolTip": "8.5 Most Frequent Character\\Program.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAcwDQAAABuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-01T03:27:13.418Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "S:\\Coding\\Projects\\cs392-team\\8.4 Vowels and Consonants\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\USISTEI\\source\\repos\\cs392-team\\8.4 Vowels and Consonants\\Program.cs",
               "RelativeDocumentMoniker": "8.4 Vowels and Consonants\\Program.cs",
-              "ToolTip": "S:\\Coding\\Projects\\cs392-team\\8.4 Vowels and Consonants\\Program.cs",
+              "ToolTip": "C:\\Users\\USISTEI\\source\\repos\\cs392-team\\8.4 Vowels and Consonants\\Program.cs",
               "RelativeToolTip": "8.4 Vowels and Consonants\\Program.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAIwCMAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -52,16 +87,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
-              "DocumentMoniker": "S:\\Coding\\Projects\\cs392-team\\8.3 Sentence Capitalizer\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\USISTEI\\source\\repos\\cs392-team\\8.3 Sentence Capitalizer\\Program.cs",
               "RelativeDocumentMoniker": "8.3 Sentence Capitalizer\\Program.cs",
-              "ToolTip": "S:\\Coding\\Projects\\cs392-team\\8.3 Sentence Capitalizer\\Program.cs",
+              "ToolTip": "C:\\Users\\USISTEI\\source\\repos\\cs392-team\\8.3 Sentence Capitalizer\\Program.cs",
               "RelativeToolTip": "8.3 Sentence Capitalizer\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T02:38:31.753Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T02:38:31.753Z"
             }
           ]
         }
