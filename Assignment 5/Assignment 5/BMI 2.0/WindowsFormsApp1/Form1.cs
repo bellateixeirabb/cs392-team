@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace WindowsFormsApp1
 {
@@ -25,6 +27,7 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
 
         }
 
@@ -161,6 +164,37 @@ namespace WindowsFormsApp1
             txtbStatus.Clear();
         }
 
+        private void btnDatabase_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                float weight = float.Parse(txtbPounds.Text);
+                float hFeet = float.Parse(txtbFeet.Text);
+                float hInch = float.Parse(txtbInch.Text);
+                float height = hFeet * 12 + hInch;
+                string connection = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"S:\\Coding\\Projects\\cs392-team\\Assignment 5\\Assignment 5\\BMI 2.0\\WindowsFormsApp1\\EnhancedBMI.mdf\";Integrated Security=True";
+                string insertQuery = "INSERT INTO UserInputs (weight, height) VALUES (@Weight, @Height)";
+
+                using (SqlConnection conn = new SqlConnection(connection))
+                {
+                    conn.Open(); using (SqlCommand cmd = new SqlCommand(insertQuery, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Weight", weight);
+                        cmd.Parameters.AddWithValue("@Height", height);
+                        //cmd.Parameters.AddWithValue(parameterName: "@Date", DateTime.Now);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+
+
+
+            }
+
+            catch (Exception ex)
+            {
+                //fuck off for now
+            }
+        }
 
     }
 }
