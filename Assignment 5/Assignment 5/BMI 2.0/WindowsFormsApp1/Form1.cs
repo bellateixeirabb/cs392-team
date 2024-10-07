@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Xml.Linq;
 
 namespace WindowsFormsApp1
 {
@@ -27,18 +28,14 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
-
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
-
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -64,50 +61,38 @@ namespace WindowsFormsApp1
             {
                 txtbStatus.Text = "Dead";
             }
-
             else if (BMI < 18.5)
             {
                 txtbStatus.Text = "Underweight";
             }
-
             else if (BMI < 25)
             {
                 txtbStatus.Text = "Healthy Weight";
             }
-
             else if (BMI < 30)
             {
                 txtbStatus.Text = "Overweight";
             }
-
             else if (BMI < 200)
             {
                 txtbStatus.Text = "Obese";
             }
-
             else
             {
                 txtbStatus.Text = "Dead";
             }
-                
-
-            
-
         }
 
         private void label6_Click(object sender, EventArgs e)
         {
-
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
-
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -120,12 +105,10 @@ namespace WindowsFormsApp1
             lblpounds.Visible = true;
             txtbPounds.Visible = true;
 
-
             txtbCm.Visible = false;
             lblCm.Visible = false;
             txtbKg.Visible = false;
             lblKg.Visible = false;
-
 
             lblEnglish.BackColor = Color.LightBlue;
             lblEnglish.ForeColor = Color.Black;
@@ -134,7 +117,6 @@ namespace WindowsFormsApp1
 
             txtbBMI.Clear();
             txtbStatus.Clear();
-
         }
 
         private void lblMetric_Click(object sender, EventArgs e)
@@ -148,7 +130,6 @@ namespace WindowsFormsApp1
             txtbInch.Visible = false;
             LblFeet.Visible = false;
             LblInch.Visible = false;
-
 
             txtbCm.Visible = true;
             lblCm.Visible = true;
@@ -166,35 +147,38 @@ namespace WindowsFormsApp1
 
         private void btnDatabase_Click(object sender, EventArgs e)
         {
-            try
+            // user input and BMI calculation from the previous button click
+            button1_Click(sender, e); // Calculate BMI
+
+            // Ensure the name is captured from a textbox or other input control
+            string name = txtName.Text;
+            float weight = metric ? float.Parse(txtbKg.Text) : float.Parse(txtbPounds.Text);
+            float height = metric ? float.Parse(txtbCm.Text) / 100 : (float.Parse(txtbFeet.Text) * 12 + float.Parse(txtbInch.Text));
+            float bmi = BMI;
+
+            // Connection string - must be added
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\USISTEI\source\repos\cs392-team\Assignment 5\Assignment 5\BMI 2.0\WindowsFormsApp1\EnhancedBMI.mdf"";Integrated Security=True";
+
+            // SQL query
+            string query = "INSERT INTO EnhancedBMI (Name, Weight, Height, BMI, DateTimeStamp) VALUES (@Name, @Weight, @Height, @BMI, @DateTimeStamp)";
+
+            // Insert data into database
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                float weight = float.Parse(txtbPounds.Text);
-                float hFeet = float.Parse(txtbFeet.Text);
-                float hInch = float.Parse(txtbInch.Text);
-                float height = hFeet * 12 + hInch;
-                string connection = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=\"S:\\Coding\\Projects\\cs392-team\\Assignment 5\\Assignment 5\\BMI 2.0\\WindowsFormsApp1\\EnhancedBMI.mdf\";Integrated Security=True";
-                string insertQuery = "INSERT INTO UserInputs (weight, height) VALUES (@Weight, @Height)";
+                SqlCommand command = new SqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Name", name);
+                command.Parameters.AddWithValue("@Weight", weight);
+                command.Parameters.AddWithValue("@Height", height);
+                command.Parameters.AddWithValue("@BMI", bmi);
+                command.Parameters.AddWithValue("@DateTimeStamp", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
 
-                using (SqlConnection conn = new SqlConnection(connection))
-                {
-                    conn.Open(); using (SqlCommand cmd = new SqlCommand(insertQuery, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@Weight", weight);
-                        cmd.Parameters.AddWithValue("@Height", height);
-                        //cmd.Parameters.AddWithValue(parameterName: "@Date", DateTime.Now);
-                        cmd.ExecuteNonQuery();
-                    }
-                }
-
-
-
+                connection.Open();
+                command.ExecuteNonQuery();
+                connection.Close();
             }
 
-            catch (Exception ex)
-            {
-                //fuck off for now
-            }
+            MessageBox.Show("Data saved successfully!");
         }
-
     }
 }
+

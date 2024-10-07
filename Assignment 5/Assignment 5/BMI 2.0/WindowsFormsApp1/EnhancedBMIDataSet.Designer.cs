@@ -419,10 +419,10 @@ namespace WindowsFormsApp1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public EnhancedBMIRow AddEnhancedBMIRow(int Id, string Name, string Gender, int Weight, int Height, double BMI, System.DateTime DateTimeStamp) {
+            public EnhancedBMIRow AddEnhancedBMIRow(string Name, string Gender, int Weight, int Height, double BMI, System.DateTime DateTimeStamp) {
                 EnhancedBMIRow rowEnhancedBMIRow = ((EnhancedBMIRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        Id,
+                        null,
                         Name,
                         Gender,
                         Weight,
@@ -486,6 +486,9 @@ namespace WindowsFormsApp1 {
                 base.Columns.Add(this.columnDateTimeStamp);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnId}, true));
+                this.columnId.AutoIncrement = true;
+                this.columnId.AutoIncrementSeed = -1;
+                this.columnId.AutoIncrementStep = -1;
                 this.columnId.AllowDBNull = false;
                 this.columnId.Unique = true;
                 this.columnName.AllowDBNull = false;

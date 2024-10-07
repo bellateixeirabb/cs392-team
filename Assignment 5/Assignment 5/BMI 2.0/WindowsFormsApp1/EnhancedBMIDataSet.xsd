@@ -85,31 +85,31 @@ SELECT Id, Name, Gender, Weight, Height, BMI, DateTimeStamp FROM EnhancedBMI WHE
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="EnhancedBMIDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="EnhancedBMIDataSet" msprop:Generator_DataSetName="EnhancedBMIDataSet">
+  <xs:element name="EnhancedBMIDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="EnhancedBMIDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="EnhancedBMIDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="EnhancedBMI" msprop:Generator_RowEvHandlerName="EnhancedBMIRowChangeEventHandler" msprop:Generator_RowDeletedName="EnhancedBMIRowDeleted" msprop:Generator_RowDeletingName="EnhancedBMIRowDeleting" msprop:Generator_RowEvArgName="EnhancedBMIRowChangeEvent" msprop:Generator_TablePropName="EnhancedBMI" msprop:Generator_RowChangedName="EnhancedBMIRowChanged" msprop:Generator_RowChangingName="EnhancedBMIRowChanging" msprop:Generator_TableClassName="EnhancedBMIDataTable" msprop:Generator_RowClassName="EnhancedBMIRow" msprop:Generator_TableVarName="tableEnhancedBMI" msprop:Generator_UserTableName="EnhancedBMI">
+        <xs:element name="EnhancedBMI" msprop:Generator_RowClassName="EnhancedBMIRow" msprop:Generator_RowEvHandlerName="EnhancedBMIRowChangeEventHandler" msprop:Generator_RowDeletedName="EnhancedBMIRowDeleted" msprop:Generator_RowDeletingName="EnhancedBMIRowDeleting" msprop:Generator_RowEvArgName="EnhancedBMIRowChangeEvent" msprop:Generator_TablePropName="EnhancedBMI" msprop:Generator_RowChangedName="EnhancedBMIRowChanged" msprop:Generator_UserTableName="EnhancedBMI" msprop:Generator_RowChangingName="EnhancedBMIRowChanging" msprop:Generator_TableClassName="EnhancedBMIDataTable" msprop:Generator_TableVarName="tableEnhancedBMI">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_UserColumnName="Id" type="xs:int" />
-              <xs:element name="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_UserColumnName="Name">
+              <xs:element name="Id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnVarNameInTable="columnId" type="xs:int" />
+              <xs:element name="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnVarNameInTable="columnName">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Gender" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_ColumnVarNameInTable="columnGender" msprop:Generator_UserColumnName="Gender">
+              <xs:element name="Gender" msprop:Generator_UserColumnName="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnVarNameInTable="columnGender">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="20" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Weight" msprop:Generator_ColumnPropNameInRow="Weight" msprop:Generator_ColumnPropNameInTable="WeightColumn" msprop:Generator_ColumnVarNameInTable="columnWeight" msprop:Generator_UserColumnName="Weight" type="xs:int" />
-              <xs:element name="Height" msprop:Generator_ColumnPropNameInRow="Height" msprop:Generator_ColumnPropNameInTable="HeightColumn" msprop:Generator_ColumnVarNameInTable="columnHeight" msprop:Generator_UserColumnName="Height" type="xs:int" />
-              <xs:element name="BMI" msprop:Generator_ColumnPropNameInRow="BMI" msprop:Generator_ColumnPropNameInTable="BMIColumn" msprop:Generator_ColumnVarNameInTable="columnBMI" msprop:Generator_UserColumnName="BMI" type="xs:double" />
-              <xs:element name="DateTimeStamp" msprop:Generator_ColumnPropNameInRow="DateTimeStamp" msprop:Generator_ColumnPropNameInTable="DateTimeStampColumn" msprop:Generator_ColumnVarNameInTable="columnDateTimeStamp" msprop:Generator_UserColumnName="DateTimeStamp" type="xs:dateTime" />
+              <xs:element name="Weight" msprop:Generator_UserColumnName="Weight" msprop:Generator_ColumnPropNameInTable="WeightColumn" msprop:Generator_ColumnPropNameInRow="Weight" msprop:Generator_ColumnVarNameInTable="columnWeight" type="xs:int" />
+              <xs:element name="Height" msprop:Generator_UserColumnName="Height" msprop:Generator_ColumnPropNameInTable="HeightColumn" msprop:Generator_ColumnPropNameInRow="Height" msprop:Generator_ColumnVarNameInTable="columnHeight" type="xs:int" />
+              <xs:element name="BMI" msprop:Generator_UserColumnName="BMI" msprop:Generator_ColumnPropNameInTable="BMIColumn" msprop:Generator_ColumnPropNameInRow="BMI" msprop:Generator_ColumnVarNameInTable="columnBMI" type="xs:double" />
+              <xs:element name="DateTimeStamp" msprop:Generator_UserColumnName="DateTimeStamp" msprop:Generator_ColumnPropNameInTable="DateTimeStampColumn" msprop:Generator_ColumnPropNameInRow="DateTimeStamp" msprop:Generator_ColumnVarNameInTable="columnDateTimeStamp" type="xs:dateTime" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
