@@ -157,7 +157,7 @@ namespace WindowsFormsApp1
             float bmi = BMI;
 
             // Connection string - must be added
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\USISTEI\source\repos\cs392-team\Assignment 5\Assignment 5\BMI 2.0\WindowsFormsApp1\EnhancedBMI.mdf"";Integrated Security=True";
+            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\EnhancedBMI.mdf;Integrated Security=True;";
 
             // SQL query
             string query = "INSERT INTO EnhancedBMI (Name, Weight, Height, BMI, DateTimeStamp) VALUES (@Name, @Weight, @Height, @BMI, @DateTimeStamp)";
