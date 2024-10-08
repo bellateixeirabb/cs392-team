@@ -13,12 +13,15 @@ using System.Xml.Linq;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form   
+    public partial class Form1 : Form
     {
         private Boolean metric = false;
         private float BMI = 0f;
         private string gender;
         private string connectionString;
+        private float weight;
+        private float height;
+        private bool failed;
         public Form1()
         {
             InitializeComponent();
@@ -29,6 +32,7 @@ namespace WindowsFormsApp1
             gender = "male";
             string projectDirectory = System.IO.Path.GetFullPath(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\"));
             AppDomain.CurrentDomain.SetData("DataDirectory", projectDirectory);
+            failed = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -47,22 +51,31 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!metric)
+            if (!float.TryParse(txtbPounds.Text, out float weightValue))
             {
-                float weight = float.Parse(txtbPounds.Text);
-                float hFeet = float.Parse(txtbFeet.Text);
-                float hInch = float.Parse(txtbInch.Text);
-                float height = hFeet * 12 + hInch;
-                BMI = 703f * weight / (height * height);
-                txtbBMI.Text = BMI.ToString("F2");
+                txtbPounds.Clear();
+                MessageBox.Show("Invalid input. Weight must be an integer");
+                return;
             }
-            else if (metric)
+            weight = weightValue;
+            float hFeet;
+            float hInch;
+            if (!float.TryParse(txtbFeet.Text, out hFeet))
             {
-                float weight = float.Parse(txtbKg.Text);
-                float height = float.Parse(txtbCm.Text) / 100;
-                BMI = weight / (height * height);
-                txtbBMI.Text = BMI.ToString("F2");
+                txtbFeet.Clear();
+                MessageBox.Show("Invalid input. Feet must be a number");
+                return;
             }
+            if (!float.TryParse(txtbInch.Text, out hInch))
+            {
+                txtbInch.Clear();
+                MessageBox.Show("Invalid input. Inch must be a number");
+                return;
+            }
+            height = hFeet * 12 + hInch;
+            BMI = 703f * weight / (height * height);
+            txtbBMI.Text = BMI.ToString("F2");
+
 
             if (BMI < 5)
             {
@@ -105,7 +118,7 @@ namespace WindowsFormsApp1
         private void label2_Click(object sender, EventArgs e)
         {
             gender = "male";
-            
+
 
             lblEnglish.BackColor = Color.LightBlue;
             lblEnglish.ForeColor = Color.Black;
@@ -125,13 +138,21 @@ namespace WindowsFormsApp1
 
         private void btnDatabase_Click(object sender, EventArgs e)
         {
+            if (txtbFeet.Text == "" || txtbInch.Text == "" || txtbPounds.Text == "" || txtName.Text == "")
+            {
+                MessageBox.Show("Please fill all of the fields");
+                return;
+            }
+            if (txtbBMI.Text == "")
+            {
+                MessageBox.Show("Please calculate the BMI first");
+                return;
+            }
             // user input and BMI calculation from the previous button click
             button1_Click(sender, e); // Calculate BMI
 
             // Ensure the name is captured from a textbox or other input control
             string name = txtName.Text;
-            float weight = metric ? float.Parse(txtbKg.Text) : float.Parse(txtbPounds.Text);
-            float height = metric ? float.Parse(txtbCm.Text) / 100 : (float.Parse(txtbFeet.Text) * 12 + float.Parse(txtbInch.Text));
             float bmi = BMI;
 
             // Connection string - must be added
@@ -163,14 +184,14 @@ namespace WindowsFormsApp1
         public void RefreshData()
         {
             string sqlstm = "select * from EnhancedBMI";
-            SqlDataAdapter SDA = new SqlDataAdapter(sqlstm,connectionString);
+            SqlDataAdapter SDA = new SqlDataAdapter(sqlstm, connectionString);
             DataSet DS = new System.Data.DataSet();
             SDA.Fill(DS, "EnhancedBMI");
             enhancedBMIDataGridView.DataSource = DS.Tables[0];
         }
     }
 
-    
+
 
 }
 

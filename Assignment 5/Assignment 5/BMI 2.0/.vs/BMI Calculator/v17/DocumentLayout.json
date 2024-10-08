@@ -13,6 +13,9 @@
     {
       "AbsoluteMoniker": "D:0:0:{95D6F065-17C8-477A-B855-07CEC7F280AF}|WindowsFormsApp1\\WindowsFormsApp1.csproj|S:\\Coding\\Projects\\cs392-team\\Assignment 5\\Assignment 5\\BMI 2.0\\windowsformsapp1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95D6F065-17C8-477A-B855-07CEC7F280AF}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/S__CODING_PROJECTS_CS392_TEAM_ASSIGNMENT_5_ASSIGNMENT_5_BMI_2.0_WINDOWSFORMSAPP1_ENHANCEDBMI.MDF/True/SqlTable/dbo.EnhancedBMI.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +25,18 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "dbo.EnhancedBMI [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_LocalDB__MSSQLLocalDB/S__CODING_PROJECTS_CS392_TEAM_ASSIGNMENT_5_ASSIGNMENT_5_BMI_2.0_WINDOWSFORMSAPP1_ENHANCEDBMI.MDF/True/SqlTable/dbo.EnhancedBMI.sql",
+              "ToolTip": "dbo.EnhancedBMI [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-10-08T16:42:08.399Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -32,7 +45,7 @@
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.Designer.cs",
               "ToolTip": "S:\\Coding\\Projects\\cs392-team\\Assignment 5\\Assignment 5\\BMI 2.0\\WindowsFormsApp1\\Form1.Designer.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Form1.Designer.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAmwEoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-08T15:14:10.761Z",
               "EditorCaption": ""
@@ -43,9 +56,9 @@
               "Title": "Form1.cs",
               "DocumentMoniker": "S:\\Coding\\Projects\\cs392-team\\Assignment 5\\Assignment 5\\BMI 2.0\\WindowsFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.cs",
-              "ToolTip": "S:\\Coding\\Projects\\cs392-team\\Assignment 5\\Assignment 5\\BMI 2.0\\WindowsFormsApp1\\Form1.cs",
-              "RelativeToolTip": "WindowsFormsApp1\\Form1.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAABPAAAAAAAAAA==",
+              "ToolTip": "S:\\Coding\\Projects\\cs392-team\\Assignment 5\\Assignment 5\\BMI 2.0\\WindowsFormsApp1\\Form1.cs*",
+              "RelativeToolTip": "WindowsFormsApp1\\Form1.cs*",
+              "ViewState": "AgIAADwAAAAAAAAAAAAmwDsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T19:39:27.19Z",
               "EditorCaption": ""
@@ -56,10 +69,11 @@
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "S:\\Coding\\Projects\\cs392-team\\Assignment 5\\Assignment 5\\BMI 2.0\\WindowsFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.cs",
-              "ToolTip": "S:\\Coding\\Projects\\cs392-team\\Assignment 5\\Assignment 5\\BMI 2.0\\WindowsFormsApp1\\Form1.cs [Design]",
-              "RelativeToolTip": "WindowsFormsApp1\\Form1.cs [Design]",
+              "ToolTip": "S:\\Coding\\Projects\\cs392-team\\Assignment 5\\Assignment 5\\BMI 2.0\\WindowsFormsApp1\\Form1.cs [Design]*",
+              "RelativeToolTip": "WindowsFormsApp1\\Form1.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T19:20:18.998Z"
+              "WhenOpened": "2024-10-04T19:20:18.998Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
