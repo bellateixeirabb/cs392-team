@@ -17,6 +17,7 @@ namespace WindowsFormsApp1
     {
         private Boolean metric = false;
         private float BMI = 0f;
+        private string gender;
         public Form1()
         {
             InitializeComponent();
@@ -24,6 +25,7 @@ namespace WindowsFormsApp1
             lblEnglish.ForeColor = Color.Black;
             lblMetric.BackColor = Color.LightGray;
             lblMetric.ForeColor = Color.Black;
+            gender = "male";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -97,26 +99,13 @@ namespace WindowsFormsApp1
 
         private void label2_Click(object sender, EventArgs e)
         {
-            metric = false;
-            txtbFeet.Visible = true;
-            txtbInch.Visible = true;
-            LblFeet.Visible = true;
-            LblInch.Visible = true;
-            lblpounds.Visible = true;
-            txtbPounds.Visible = true;
-
-            txtbCm.Visible = false;
-            lblCm.Visible = false;
-            txtbKg.Visible = false;
-            lblKg.Visible = false;
+            gender = "male";
+            
 
             lblEnglish.BackColor = Color.LightBlue;
             lblEnglish.ForeColor = Color.Black;
             lblMetric.BackColor = Color.LightGray;
             lblMetric.ForeColor = Color.Black;
-
-            txtbBMI.Clear();
-            txtbStatus.Clear();
         }
 
         private void lblMetric_Click(object sender, EventArgs e)
@@ -125,24 +114,8 @@ namespace WindowsFormsApp1
             lblMetric.ForeColor = Color.Black;
             lblEnglish.BackColor = Color.LightGray;
             lblEnglish.ForeColor = Color.Black;
-            metric = true;
-            txtbFeet.Visible = false;
-            txtbInch.Visible = false;
-            LblFeet.Visible = false;
-            LblInch.Visible = false;
 
-            txtbCm.Visible = true;
-            lblCm.Visible = true;
-            txtbKg.Visible = true;
-            lblKg.Visible = true;
-
-            txtbCm.Location = txtbFeet.Location;
-            lblCm.Location = LblFeet.Location;
-            txtbKg.Location = txtbPounds.Location;
-            lblKg.Location = lblpounds.Location;
-
-            txtbBMI.Clear();
-            txtbStatus.Clear();
+            gender = "female";
         }
 
         private void btnDatabase_Click(object sender, EventArgs e)
@@ -160,13 +133,14 @@ namespace WindowsFormsApp1
             string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\EnhancedBMI.mdf;Integrated Security=True;";
 
             // SQL query
-            string query = "INSERT INTO EnhancedBMI (Name, Weight, Height, BMI, DateTimeStamp) VALUES (@Name, @Weight, @Height, @BMI, @DateTimeStamp)";
+            string query = "INSERT INTO EnhancedBMI (Name, Gender, Weight, Height, BMI, DateTimeStamp) VALUES (@Name, @Gender, @Weight, @Height, @BMI, @DateTimeStamp)";
 
             // Insert data into database
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand command = new SqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Name", name);
+                command.Parameters.AddWithValue(parameterName: "@Name", name);
+                command.Parameters.AddWithValue("@Gender", gender);
                 command.Parameters.AddWithValue("@Weight", weight);
                 command.Parameters.AddWithValue("@Height", height);
                 command.Parameters.AddWithValue("@BMI", bmi);
