@@ -48,7 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -61,10 +63,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EnhancedBMIDataSet.Designer.cs">
+    <Compile Include="BMIDataset.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>EnhancedBMIDataSet.xsd</DependentUpon>
+      <DependentUpon>BMIDataset.xsd</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -86,16 +88,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="EnhancedBMIDataSet.xsc">
-      <DependentUpon>EnhancedBMIDataSet.xsd</DependentUpon>
+    <None Include="BMIDataset.xsc">
+      <DependentUpon>BMIDataset.xsd</DependentUpon>
     </None>
-    <None Include="EnhancedBMIDataSet.xsd">
+    <None Include="BMIDataset.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>EnhancedBMIDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>BMIDataset.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="EnhancedBMIDataSet.xss">
-      <DependentUpon>EnhancedBMIDataSet.xsd</DependentUpon>
+    <None Include="BMIDataset.xss">
+      <DependentUpon>BMIDataset.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

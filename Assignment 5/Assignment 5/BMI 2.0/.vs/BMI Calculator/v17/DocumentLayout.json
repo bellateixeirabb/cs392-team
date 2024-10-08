@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "S:\\Coding\\Projects\\cs392-team\\Assignment 5\\Assignment 5\\BMI 2.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{95D6F065-17C8-477A-B855-07CEC7F280AF}|WindowsFormsApp1\\WindowsFormsApp1.csproj|s:\\coding\\projects\\cs392-team\\assignment 5\\assignment 5\\bmi 2.0\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{95D6F065-17C8-477A-B855-07CEC7F280AF}|WindowsFormsApp1\\WindowsFormsApp1.csproj|s:\\coding\\projects\\cs392-team\\assignment 5\\assignment 5\\bmi 2.0\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95D6F065-17C8-477A-B855-07CEC7F280AF}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95D6F065-17C8-477A-B855-07CEC7F280AF}|WindowsFormsApp1\\WindowsFormsApp1.csproj|S:\\Coding\\Projects\\cs392-team\\Assignment 5\\Assignment 5\\BMI 2.0\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{95D6F065-17C8-477A-B855-07CEC7F280AF}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{95D6F065-17C8-477A-B855-07CEC7F280AF}|WindowsFormsApp1\\WindowsFormsApp1.csproj|S:\\Coding\\Projects\\cs392-team\\Assignment 5\\Assignment 5\\BMI 2.0\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{95D6F065-17C8-477A-B855-07CEC7F280AF}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{95D6F065-17C8-477A-B855-07CEC7F280AF}|WindowsFormsApp1\\WindowsFormsApp1.csproj|S:\\Coding\\Projects\\cs392-team\\Assignment 5\\Assignment 5\\BMI 2.0\\windowsformsapp1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95D6F065-17C8-477A-B855-07CEC7F280AF}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,24 +22,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "S:\\Coding\\Projects\\cs392-team\\Assignment 5\\Assignment 5\\BMI 2.0\\WindowsFormsApp1\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.Designer.cs",
+              "ToolTip": "S:\\Coding\\Projects\\cs392-team\\Assignment 5\\Assignment 5\\BMI 2.0\\WindowsFormsApp1\\Form1.Designer.cs",
+              "RelativeToolTip": "WindowsFormsApp1\\Form1.Designer.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAmwEoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T15:14:10.761Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "S:\\Coding\\Projects\\cs392-team\\Assignment 5\\Assignment 5\\BMI 2.0\\WindowsFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.cs",
               "ToolTip": "S:\\Coding\\Projects\\cs392-team\\Assignment 5\\Assignment 5\\BMI 2.0\\WindowsFormsApp1\\Form1.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Form1.cs",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAAwKgAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAUwB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-04T19:39:27.19Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "S:\\Coding\\Projects\\cs392-team\\Assignment 5\\Assignment 5\\BMI 2.0\\WindowsFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.cs",

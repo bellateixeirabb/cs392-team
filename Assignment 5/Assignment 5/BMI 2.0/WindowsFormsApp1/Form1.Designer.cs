@@ -52,15 +52,26 @@
             this.txtbKg = new System.Windows.Forms.TextBox();
             this.lblKg = new System.Windows.Forms.Label();
             this.btnDatabase = new System.Windows.Forms.Button();
-            this.enhancedBMIDataSet = new WindowsFormsApp1.EnhancedBMIDataSet();
-            this.enhancedBMIBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.enhancedBMITableAdapter = new WindowsFormsApp1.EnhancedBMIDataSetTableAdapters.EnhancedBMITableAdapter();
-            this.tableAdapterManager = new WindowsFormsApp1.EnhancedBMIDataSetTableAdapters.TableAdapterManager();
             this.txtName = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
+            this.enhancedBMIBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bMIDataset = new WindowsFormsApp1.BMIDataset();
+            this.enhancedBMIBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.enhancedBMITableAdapter = new WindowsFormsApp1.BMIDatasetTableAdapters.EnhancedBMITableAdapter();
+            this.tableAdapterManager = new WindowsFormsApp1.BMIDatasetTableAdapters.TableAdapterManager();
+            this.enhancedBMIDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.enhancedBMIDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enhancedBMIBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bMIDataset)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enhancedBMIBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enhancedBMIDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // lblheight
@@ -119,7 +130,7 @@
             // txtbFeet
             // 
             this.txtbFeet.Location = new System.Drawing.Point(130, 244);
-            this.txtbFeet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbFeet.Margin = new System.Windows.Forms.Padding(4);
             this.txtbFeet.Name = "txtbFeet";
             this.txtbFeet.Size = new System.Drawing.Size(121, 29);
             this.txtbFeet.TabIndex = 6;
@@ -127,7 +138,7 @@
             // txtbInch
             // 
             this.txtbInch.Location = new System.Drawing.Point(292, 244);
-            this.txtbInch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbInch.Margin = new System.Windows.Forms.Padding(4);
             this.txtbInch.Name = "txtbInch";
             this.txtbInch.Size = new System.Drawing.Size(121, 29);
             this.txtbInch.TabIndex = 7;
@@ -135,7 +146,7 @@
             // txtbPounds
             // 
             this.txtbPounds.Location = new System.Drawing.Point(130, 384);
-            this.txtbPounds.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbPounds.Margin = new System.Windows.Forms.Padding(4);
             this.txtbPounds.Name = "txtbPounds";
             this.txtbPounds.Size = new System.Drawing.Size(121, 29);
             this.txtbPounds.TabIndex = 8;
@@ -145,7 +156,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(123, 445);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 65);
             this.button1.TabIndex = 9;
@@ -156,7 +167,7 @@
             // txtbBMI
             // 
             this.txtbBMI.Location = new System.Drawing.Point(471, 419);
-            this.txtbBMI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbBMI.Margin = new System.Windows.Forms.Padding(4);
             this.txtbBMI.Name = "txtbBMI";
             this.txtbBMI.ReadOnly = true;
             this.txtbBMI.Size = new System.Drawing.Size(121, 29);
@@ -166,7 +177,7 @@
             // txtbStatus
             // 
             this.txtbStatus.Location = new System.Drawing.Point(636, 419);
-            this.txtbStatus.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbStatus.Margin = new System.Windows.Forms.Padding(4);
             this.txtbStatus.Name = "txtbStatus";
             this.txtbStatus.ReadOnly = true;
             this.txtbStatus.Size = new System.Drawing.Size(121, 29);
@@ -197,7 +208,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.HotTrack;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(981, 89);
             this.pictureBox1.TabIndex = 14;
@@ -252,7 +263,7 @@
             // txtbCm
             // 
             this.txtbCm.Location = new System.Drawing.Point(460, 161);
-            this.txtbCm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbCm.Margin = new System.Windows.Forms.Padding(4);
             this.txtbCm.Name = "txtbCm";
             this.txtbCm.Size = new System.Drawing.Size(121, 29);
             this.txtbCm.TabIndex = 19;
@@ -272,7 +283,7 @@
             // txtbKg
             // 
             this.txtbKg.Location = new System.Drawing.Point(609, 161);
-            this.txtbKg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtbKg.Margin = new System.Windows.Forms.Padding(4);
             this.txtbKg.Name = "txtbKg";
             this.txtbKg.Size = new System.Drawing.Size(121, 29);
             this.txtbKg.TabIndex = 21;
@@ -293,7 +304,7 @@
             // 
             this.btnDatabase.AutoSize = true;
             this.btnDatabase.Location = new System.Drawing.Point(779, 493);
-            this.btnDatabase.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDatabase.Margin = new System.Windows.Forms.Padding(4);
             this.btnDatabase.Name = "btnDatabase";
             this.btnDatabase.Size = new System.Drawing.Size(196, 42);
             this.btnDatabase.TabIndex = 23;
@@ -301,30 +312,10 @@
             this.btnDatabase.UseVisualStyleBackColor = true;
             this.btnDatabase.Click += new System.EventHandler(this.btnDatabase_Click);
             // 
-            // enhancedBMIDataSet
-            // 
-            this.enhancedBMIDataSet.DataSetName = "EnhancedBMIDataSet";
-            this.enhancedBMIDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // enhancedBMIBindingSource
-            // 
-            this.enhancedBMIBindingSource.DataMember = "EnhancedBMI";
-            this.enhancedBMIBindingSource.DataSource = this.enhancedBMIDataSet;
-            // 
-            // enhancedBMITableAdapter
-            // 
-            this.enhancedBMITableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.EnhancedBMITableAdapter = this.enhancedBMITableAdapter;
-            this.tableAdapterManager.UpdateOrder = WindowsFormsApp1.EnhancedBMIDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(714, 244);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(121, 29);
             this.txtName.TabIndex = 24;
@@ -339,11 +330,113 @@
             this.lblName.TabIndex = 25;
             this.lblName.Text = "Name:";
             // 
+            // enhancedBMIBindingSource
+            // 
+            this.enhancedBMIBindingSource.DataMember = "EnhancedBMI";
+            // 
+            // bMIDataset
+            // 
+            this.bMIDataset.DataSetName = "BMIDataset";
+            this.bMIDataset.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // enhancedBMIBindingSource1
+            // 
+            this.enhancedBMIBindingSource1.DataMember = "EnhancedBMI";
+            this.enhancedBMIBindingSource1.DataSource = this.bMIDataset;
+            // 
+            // enhancedBMITableAdapter
+            // 
+            this.enhancedBMITableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.EnhancedBMITableAdapter = this.enhancedBMITableAdapter;
+            this.tableAdapterManager.UpdateOrder = WindowsFormsApp1.BMIDatasetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // enhancedBMIDataGridView
+            // 
+            this.enhancedBMIDataGridView.AutoGenerateColumns = false;
+            this.enhancedBMIDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.enhancedBMIDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14});
+            this.enhancedBMIDataGridView.DataSource = this.enhancedBMIBindingSource1;
+            this.enhancedBMIDataGridView.Location = new System.Drawing.Point(78, 542);
+            this.enhancedBMIDataGridView.Name = "enhancedBMIDataGridView";
+            this.enhancedBMIDataGridView.RowHeadersWidth = 72;
+            this.enhancedBMIDataGridView.RowTemplate.Height = 31;
+            this.enhancedBMIDataGridView.Size = new System.Drawing.Size(815, 220);
+            this.enhancedBMIDataGridView.TabIndex = 25;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Id";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Id";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 9;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Width = 175;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 9;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.Width = 175;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Gender";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Gender";
+            this.dataGridViewTextBoxColumn10.MinimumWidth = 9;
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.Width = 175;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Weight";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Weight";
+            this.dataGridViewTextBoxColumn11.MinimumWidth = 9;
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.Width = 175;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Height";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Height";
+            this.dataGridViewTextBoxColumn12.MinimumWidth = 9;
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            this.dataGridViewTextBoxColumn12.Width = 175;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "BMI";
+            this.dataGridViewTextBoxColumn13.HeaderText = "BMI";
+            this.dataGridViewTextBoxColumn13.MinimumWidth = 9;
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.Width = 175;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "DateTimeStamp";
+            this.dataGridViewTextBoxColumn14.HeaderText = "DateTimeStamp";
+            this.dataGridViewTextBoxColumn14.MinimumWidth = 9;
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.Width = 175;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(985, 563);
+            this.ClientSize = new System.Drawing.Size(1001, 807);
+            this.Controls.Add(this.enhancedBMIDataGridView);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.btnDatabase);
@@ -369,13 +462,15 @@
             this.Controls.Add(this.LblInch);
             this.Controls.Add(this.LblFeet);
             this.Controls.Add(this.lblheight);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.enhancedBMIDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enhancedBMIBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bMIDataset)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enhancedBMIBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enhancedBMIDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -406,12 +501,28 @@
         private System.Windows.Forms.TextBox txtbKg;
         private System.Windows.Forms.Label lblKg;
         private System.Windows.Forms.Button btnDatabase;
-        private EnhancedBMIDataSet enhancedBMIDataSet;
         private System.Windows.Forms.BindingSource enhancedBMIBindingSource;
-        private EnhancedBMIDataSetTableAdapters.EnhancedBMITableAdapter enhancedBMITableAdapter;
-        private EnhancedBMIDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private BMIDataset bMIDataset;
+        private System.Windows.Forms.BindingSource enhancedBMIBindingSource1;
+        private BMIDatasetTableAdapters.EnhancedBMITableAdapter enhancedBMITableAdapter;
+        private BMIDatasetTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.DataGridView enhancedBMIDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
     }
 }
 

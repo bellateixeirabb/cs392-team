@@ -490,6 +490,7 @@ namespace WindowsFormsApp1 {
                 this.columnId.AutoIncrementSeed = -1;
                 this.columnId.AutoIncrementStep = -1;
                 this.columnId.AllowDBNull = false;
+                this.columnId.ReadOnly = true;
                 this.columnId.Unique = true;
                 this.columnName.AllowDBNull = false;
                 this.columnName.MaxLength = 50;
@@ -897,10 +898,9 @@ namespace WindowsFormsApp1.EnhancedBMIDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DateTimeStamp", global::System.Data.SqlDbType.DateTime2, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DateTimeStamp", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[EnhancedBMI] ([Id], [Name], [Gender], [Weight], [Height], [BMI], [DateTimeStamp]) VALUES (@Id, @Name, @Gender, @Weight, @Height, @BMI, @DateTimeStamp);
-SELECT Id, Name, Gender, Weight, Height, BMI, DateTimeStamp FROM EnhancedBMI WHERE (Id = @Id)";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[EnhancedBMI] ([Name], [Gender], [Weight], [Height], [BMI], [DateTimeStamp]) VALUES (@Name, @Gender, @Weight, @Height, @BMI, @DateTimeStamp);
+SELECT Id, Name, Gender, Weight, Height, BMI, DateTimeStamp FROM EnhancedBMI WHERE (Id = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gender", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gender", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Weight", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Weight", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -909,10 +909,9 @@ SELECT Id, Name, Gender, Weight, Height, BMI, DateTimeStamp FROM EnhancedBMI WHE
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DateTimeStamp", global::System.Data.SqlDbType.DateTime2, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DateTimeStamp", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[EnhancedBMI] SET [Id] = @Id, [Name] = @Name, [Gender] = @Gender, [Weight] = @Weight, [Height] = @Height, [BMI] = @BMI, [DateTimeStamp] = @DateTimeStamp WHERE (([Id] = @Original_Id) AND ([Name] = @Original_Name) AND ([Gender] = @Original_Gender) AND ([Weight] = @Original_Weight) AND ([Height] = @Original_Height) AND ([BMI] = @Original_BMI) AND ([DateTimeStamp] = @Original_DateTimeStamp));
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[EnhancedBMI] SET [Name] = @Name, [Gender] = @Gender, [Weight] = @Weight, [Height] = @Height, [BMI] = @BMI, [DateTimeStamp] = @DateTimeStamp WHERE (([Id] = @Original_Id) AND ([Name] = @Original_Name) AND ([Gender] = @Original_Gender) AND ([Weight] = @Original_Weight) AND ([Height] = @Original_Height) AND ([BMI] = @Original_BMI) AND ([DateTimeStamp] = @Original_DateTimeStamp));
 SELECT Id, Name, Gender, Weight, Height, BMI, DateTimeStamp FROM EnhancedBMI WHERE (Id = @Id)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Name", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Name", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Gender", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Gender", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Weight", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Weight", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -926,6 +925,7 @@ SELECT Id, Name, Gender, Weight, Height, BMI, DateTimeStamp FROM EnhancedBMI WHE
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Height", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Height", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_BMI", global::System.Data.SqlDbType.Float, 0, global::System.Data.ParameterDirection.Input, 0, 0, "BMI", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DateTimeStamp", global::System.Data.SqlDbType.DateTime2, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DateTimeStamp", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "Id", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1040,24 +1040,23 @@ SELECT Id, Name, Gender, Weight, Height, BMI, DateTimeStamp FROM EnhancedBMI WHE
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(int Id, string Name, string Gender, int Weight, int Height, double BMI, System.DateTime DateTimeStamp) {
-            this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Id));
+        public virtual int Insert(string Name, string Gender, int Weight, int Height, double BMI, System.DateTime DateTimeStamp) {
             if ((Name == null)) {
                 throw new global::System.ArgumentNullException("Name");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Name));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Name));
             }
             if ((Gender == null)) {
                 throw new global::System.ArgumentNullException("Gender");
             }
             else {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Gender));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Gender));
             }
-            this.Adapter.InsertCommand.Parameters[3].Value = ((int)(Weight));
-            this.Adapter.InsertCommand.Parameters[4].Value = ((int)(Height));
-            this.Adapter.InsertCommand.Parameters[5].Value = ((double)(BMI));
-            this.Adapter.InsertCommand.Parameters[6].Value = ((System.DateTime)(DateTimeStamp));
+            this.Adapter.InsertCommand.Parameters[2].Value = ((int)(Weight));
+            this.Adapter.InsertCommand.Parameters[3].Value = ((int)(Height));
+            this.Adapter.InsertCommand.Parameters[4].Value = ((double)(BMI));
+            this.Adapter.InsertCommand.Parameters[5].Value = ((System.DateTime)(DateTimeStamp));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1078,41 +1077,41 @@ SELECT Id, Name, Gender, Weight, Height, BMI, DateTimeStamp FROM EnhancedBMI WHE
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(int Id, string Name, string Gender, int Weight, int Height, double BMI, System.DateTime DateTimeStamp, int Original_Id, string Original_Name, string Original_Gender, int Original_Weight, int Original_Height, double Original_BMI, System.DateTime Original_DateTimeStamp) {
-            this.Adapter.UpdateCommand.Parameters[0].Value = ((int)(Id));
+        public virtual int Update(string Name, string Gender, int Weight, int Height, double BMI, System.DateTime DateTimeStamp, int Original_Id, string Original_Name, string Original_Gender, int Original_Weight, int Original_Height, double Original_BMI, System.DateTime Original_DateTimeStamp, int Id) {
             if ((Name == null)) {
                 throw new global::System.ArgumentNullException("Name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Name));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Name));
             }
             if ((Gender == null)) {
                 throw new global::System.ArgumentNullException("Gender");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Gender));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Gender));
             }
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Weight));
-            this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Height));
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((double)(BMI));
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((System.DateTime)(DateTimeStamp));
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_Id));
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(Weight));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Height));
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((double)(BMI));
+            this.Adapter.UpdateCommand.Parameters[5].Value = ((System.DateTime)(DateTimeStamp));
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_Id));
             if ((Original_Name == null)) {
                 throw new global::System.ArgumentNullException("Original_Name");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_Name));
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((string)(Original_Name));
             }
             if ((Original_Gender == null)) {
                 throw new global::System.ArgumentNullException("Original_Gender");
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_Gender));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_Gender));
             }
-            this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Original_Weight));
-            this.Adapter.UpdateCommand.Parameters[11].Value = ((int)(Original_Height));
-            this.Adapter.UpdateCommand.Parameters[12].Value = ((double)(Original_BMI));
-            this.Adapter.UpdateCommand.Parameters[13].Value = ((System.DateTime)(Original_DateTimeStamp));
+            this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_Weight));
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Original_Height));
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((double)(Original_BMI));
+            this.Adapter.UpdateCommand.Parameters[12].Value = ((System.DateTime)(Original_DateTimeStamp));
+            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Id));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1134,7 +1133,7 @@ SELECT Id, Name, Gender, Weight, Height, BMI, DateTimeStamp FROM EnhancedBMI WHE
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(string Name, string Gender, int Weight, int Height, double BMI, System.DateTime DateTimeStamp, int Original_Id, string Original_Name, string Original_Gender, int Original_Weight, int Original_Height, double Original_BMI, System.DateTime Original_DateTimeStamp) {
-            return this.Update(Original_Id, Name, Gender, Weight, Height, BMI, DateTimeStamp, Original_Id, Original_Name, Original_Gender, Original_Weight, Original_Height, Original_BMI, Original_DateTimeStamp);
+            return this.Update(Name, Gender, Weight, Height, BMI, DateTimeStamp, Original_Id, Original_Name, Original_Gender, Original_Weight, Original_Height, Original_BMI, Original_DateTimeStamp, Original_Id);
         }
     }
     

@@ -30,6 +30,8 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'bMIDataset.EnhancedBMI' table. You can move, or remove it, as needed.
+            this.enhancedBMITableAdapter.Fill(this.bMIDataset.EnhancedBMI);
         }
 
         private void label3_Click(object sender, EventArgs e)
