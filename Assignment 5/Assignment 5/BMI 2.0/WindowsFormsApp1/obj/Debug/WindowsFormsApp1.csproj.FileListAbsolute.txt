@@ -20,8 +20,6 @@ C:\Users\USISTEI\source\repos\cs392-team\Assignment 5\Assignment 5\BMI 2.0\Windo
 C:\Users\USISTEI\source\repos\cs392-team\Assignment 5\Assignment 5\BMI 2.0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\USISTEI\source\repos\cs392-team\Assignment 5\Assignment 5\BMI 2.0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\USISTEI\source\repos\cs392-team\Assignment 5\Assignment 5\BMI 2.0\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
-S:\Coding\Projects\cs392-team\Assignment 5\Assignment 5\BMI 2.0\WindowsFormsApp1\bin\Debug\EnhancedBMI.mdf
-S:\Coding\Projects\cs392-team\Assignment 5\Assignment 5\BMI 2.0\WindowsFormsApp1\bin\Debug\EnhancedBMI_log.ldf
 S:\Coding\Projects\cs392-team\Assignment 5\Assignment 5\BMI 2.0\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
 S:\Coding\Projects\cs392-team\Assignment 5\Assignment 5\BMI 2.0\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
 S:\Coding\Projects\cs392-team\Assignment 5\Assignment 5\BMI 2.0\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb

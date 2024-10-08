@@ -27,6 +27,8 @@ namespace WindowsFormsApp1
             lblMetric.BackColor = Color.LightGray;
             lblMetric.ForeColor = Color.Black;
             gender = "male";
+            string projectDirectory = System.IO.Path.GetFullPath(System.IO.Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\"));
+            AppDomain.CurrentDomain.SetData("DataDirectory", projectDirectory);
         }
 
         private void Form1_Load(object sender, EventArgs e)
