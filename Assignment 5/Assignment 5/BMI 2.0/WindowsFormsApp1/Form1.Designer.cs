@@ -54,7 +54,6 @@
             this.btnDatabase = new System.Windows.Forms.Button();
             this.txtName = new System.Windows.Forms.TextBox();
             this.lblName = new System.Windows.Forms.Label();
-            this.enhancedBMIBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.bMIDataset = new WindowsFormsApp1.BMIDataset();
             this.enhancedBMIBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.enhancedBMITableAdapter = new WindowsFormsApp1.BMIDatasetTableAdapters.EnhancedBMITableAdapter();
@@ -68,7 +67,6 @@
             this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.enhancedBMIBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bMIDataset)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enhancedBMIBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.enhancedBMIDataGridView)).BeginInit();
@@ -330,10 +328,6 @@
             this.lblName.TabIndex = 25;
             this.lblName.Text = "Name:";
             // 
-            // enhancedBMIBindingSource
-            // 
-            this.enhancedBMIBindingSource.DataMember = "EnhancedBMI";
-            // 
             // bMIDataset
             // 
             this.bMIDataset.DataSetName = "BMIDataset";
@@ -467,7 +461,6 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.enhancedBMIBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bMIDataset)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enhancedBMIBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.enhancedBMIDataGridView)).EndInit();
@@ -501,7 +494,6 @@
         private System.Windows.Forms.TextBox txtbKg;
         private System.Windows.Forms.Label lblKg;
         private System.Windows.Forms.Button btnDatabase;
-        private System.Windows.Forms.BindingSource enhancedBMIBindingSource;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;

@@ -13,11 +13,12 @@ using System.Xml.Linq;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class Form1 : Form   
     {
         private Boolean metric = false;
         private float BMI = 0f;
         private string gender;
+        private string connectionString;
         public Form1()
         {
             InitializeComponent();
@@ -132,7 +133,7 @@ namespace WindowsFormsApp1
             float bmi = BMI;
 
             // Connection string - must be added
-            string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\EnhancedBMI.mdf;Integrated Security=True;";
+            connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\EnhancedBMI.mdf;Integrated Security=True;";
 
             // SQL query
             string query = "INSERT INTO EnhancedBMI (Name, Gender, Weight, Height, BMI, DateTimeStamp) VALUES (@Name, @Gender, @Weight, @Height, @BMI, @DateTimeStamp)";
@@ -154,7 +155,20 @@ namespace WindowsFormsApp1
             }
 
             MessageBox.Show("Data saved successfully!");
+            RefreshData();
+        }
+
+        public void RefreshData()
+        {
+            string sqlstm = "select * from EnhancedBMI";
+            SqlDataAdapter SDA = new SqlDataAdapter(sqlstm,connectionString);
+            DataSet DS = new System.Data.DataSet();
+            SDA.Fill(DS, "EnhancedBMI");
+            enhancedBMIDataGridView.DataSource = DS.Tables[0];
         }
     }
+
+    
+
 }
 
