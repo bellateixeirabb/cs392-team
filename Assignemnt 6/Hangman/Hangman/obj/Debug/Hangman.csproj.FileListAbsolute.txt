@@ -1,0 +1,10 @@
+S:\Coding\Projects\cs392-team\Assignemnt 6\Hangman\Hangman\bin\Debug\Hangman.exe.config
+S:\Coding\Projects\cs392-team\Assignemnt 6\Hangman\Hangman\bin\Debug\Hangman.exe
+S:\Coding\Projects\cs392-team\Assignemnt 6\Hangman\Hangman\bin\Debug\Hangman.pdb
+S:\Coding\Projects\cs392-team\Assignemnt 6\Hangman\Hangman\obj\Debug\Hangman.csproj.AssemblyReference.cache
+S:\Coding\Projects\cs392-team\Assignemnt 6\Hangman\Hangman\obj\Debug\Hangman.hangman.resources
+S:\Coding\Projects\cs392-team\Assignemnt 6\Hangman\Hangman\obj\Debug\Hangman.Properties.Resources.resources
+S:\Coding\Projects\cs392-team\Assignemnt 6\Hangman\Hangman\obj\Debug\Hangman.csproj.GenerateResource.cache
+S:\Coding\Projects\cs392-team\Assignemnt 6\Hangman\Hangman\obj\Debug\Hangman.csproj.CoreCompileInputs.cache
+S:\Coding\Projects\cs392-team\Assignemnt 6\Hangman\Hangman\obj\Debug\Hangman.exe
+S:\Coding\Projects\cs392-team\Assignemnt 6\Hangman\Hangman\obj\Debug\Hangman.pdb
