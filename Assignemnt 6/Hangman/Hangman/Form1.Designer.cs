@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(hangman));
             this.btnA = new System.Windows.Forms.Button();
             this.btnB = new System.Windows.Forms.Button();
             this.btnC = new System.Windows.Forms.Button();
@@ -64,26 +63,11 @@
             this.wordChoiceBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.wordChoiceTableAdapter = new Hangman.WordsDataSetTableAdapters.WordChoiceTableAdapter();
             this.tableAdapterManager = new Hangman.WordsDataSetTableAdapters.TableAdapterManager();
-            this.wordChoiceBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.wordChoiceBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.lblHintText = new System.Windows.Forms.Label();
             this.lblHintTitle = new System.Windows.Forms.Label();
             this.mainFrame = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.wordsDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wordChoiceBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wordChoiceBindingNavigator)).BeginInit();
-            this.wordChoiceBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainFrame)).BeginInit();
             this.SuspendLayout();
             // 
@@ -434,132 +418,6 @@
             this.tableAdapterManager.UpdateOrder = Hangman.WordsDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.WordChoiceTableAdapter = this.wordChoiceTableAdapter;
             // 
-            // wordChoiceBindingNavigator
-            // 
-            this.wordChoiceBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.wordChoiceBindingNavigator.BindingSource = this.wordChoiceBindingSource;
-            this.wordChoiceBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.wordChoiceBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.wordChoiceBindingNavigator.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.wordChoiceBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.wordChoiceBindingNavigatorSaveItem});
-            this.wordChoiceBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.wordChoiceBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.wordChoiceBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.wordChoiceBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.wordChoiceBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.wordChoiceBindingNavigator.Name = "wordChoiceBindingNavigator";
-            this.wordChoiceBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.wordChoiceBindingNavigator.Size = new System.Drawing.Size(1030, 38);
-            this.wordChoiceBindingNavigator.TabIndex = 28;
-            this.wordChoiceBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(34, 33);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(54, 28);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(34, 28);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(34, 28);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(34, 28);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 33);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 31);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 33);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(34, 28);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(34, 28);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 33);
-            // 
-            // wordChoiceBindingNavigatorSaveItem
-            // 
-            this.wordChoiceBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.wordChoiceBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("wordChoiceBindingNavigatorSaveItem.Image")));
-            this.wordChoiceBindingNavigatorSaveItem.Name = "wordChoiceBindingNavigatorSaveItem";
-            this.wordChoiceBindingNavigatorSaveItem.Size = new System.Drawing.Size(34, 28);
-            this.wordChoiceBindingNavigatorSaveItem.Text = "Save Data";
-            this.wordChoiceBindingNavigatorSaveItem.Click += new System.EventHandler(this.wordChoiceBindingNavigatorSaveItem_Click);
-            // 
             // lblHintText
             // 
             this.lblHintText.AutoSize = true;
@@ -597,7 +455,6 @@
             this.Controls.Add(this.mainFrame);
             this.Controls.Add(this.lblHintTitle);
             this.Controls.Add(this.lblHintText);
-            this.Controls.Add(this.wordChoiceBindingNavigator);
             this.Controls.Add(this.txtbWord);
             this.Controls.Add(this.btnGiveUp);
             this.Controls.Add(this.btnGenerate);
@@ -633,9 +490,6 @@
             this.Load += new System.EventHandler(this.hangman_Load);
             ((System.ComponentModel.ISupportInitialize)(this.wordsDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wordChoiceBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wordChoiceBindingNavigator)).EndInit();
-            this.wordChoiceBindingNavigator.ResumeLayout(false);
-            this.wordChoiceBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mainFrame)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -678,19 +532,6 @@
         private System.Windows.Forms.BindingSource wordChoiceBindingSource;
         private WordsDataSetTableAdapters.WordChoiceTableAdapter wordChoiceTableAdapter;
         private WordsDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator wordChoiceBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton wordChoiceBindingNavigatorSaveItem;
         private System.Windows.Forms.Label lblHintText;
         private System.Windows.Forms.Label lblHintTitle;
         private System.Windows.Forms.PictureBox mainFrame;
