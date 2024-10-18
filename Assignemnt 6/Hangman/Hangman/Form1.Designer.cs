@@ -56,7 +56,6 @@
             this.btnY = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnZ = new System.Windows.Forms.Button();
-            this.btnGenerate = new System.Windows.Forms.Button();
             this.btnGiveUp = new System.Windows.Forms.Button();
             this.txtbWord = new System.Windows.Forms.TextBox();
             this.wordsDataSet = new Hangman.WordsDataSet();
@@ -66,6 +65,11 @@
             this.lblHintText = new System.Windows.Forms.Label();
             this.lblHintTitle = new System.Windows.Forms.Label();
             this.mainFrame = new System.Windows.Forms.PictureBox();
+            this.lblWins = new System.Windows.Forms.Label();
+            this.lblLosses = new System.Windows.Forms.Label();
+            this.txtbWins = new System.Windows.Forms.TextBox();
+            this.txtbLosses = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.wordsDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wordChoiceBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mainFrame)).BeginInit();
@@ -359,7 +363,7 @@
             // btnZ
             // 
             this.btnZ.AutoSize = true;
-            this.btnZ.Location = new System.Drawing.Point(46, 414);
+            this.btnZ.Location = new System.Drawing.Point(232, 414);
             this.btnZ.Name = "btnZ";
             this.btnZ.Size = new System.Drawing.Size(75, 30);
             this.btnZ.TabIndex = 25;
@@ -367,21 +371,10 @@
             this.btnZ.UseVisualStyleBackColor = true;
             this.btnZ.Click += new System.EventHandler(this.btnZ_Click);
             // 
-            // btnGenerate
-            // 
-            this.btnGenerate.AutoSize = true;
-            this.btnGenerate.Location = new System.Drawing.Point(160, 414);
-            this.btnGenerate.Name = "btnGenerate";
-            this.btnGenerate.Size = new System.Drawing.Size(129, 30);
-            this.btnGenerate.TabIndex = 26;
-            this.btnGenerate.Text = "Generate Word";
-            this.btnGenerate.UseVisualStyleBackColor = true;
-            this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
-            // 
             // btnGiveUp
             // 
             this.btnGiveUp.AutoSize = true;
-            this.btnGiveUp.Location = new System.Drawing.Point(360, 414);
+            this.btnGiveUp.Location = new System.Drawing.Point(418, 414);
             this.btnGiveUp.Name = "btnGiveUp";
             this.btnGiveUp.Size = new System.Drawing.Size(76, 30);
             this.btnGiveUp.TabIndex = 27;
@@ -394,6 +387,7 @@
             this.txtbWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtbWord.Location = new System.Drawing.Point(46, 496);
             this.txtbWord.Name = "txtbWord";
+            this.txtbWord.ReadOnly = true;
             this.txtbWord.Size = new System.Drawing.Size(447, 62);
             this.txtbWord.TabIndex = 5;
             this.txtbWord.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -432,7 +426,7 @@
             // 
             this.lblHintTitle.AutoSize = true;
             this.lblHintTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHintTitle.Location = new System.Drawing.Point(701, 450);
+            this.lblHintTitle.Location = new System.Drawing.Point(726, 464);
             this.lblHintTitle.Name = "lblHintTitle";
             this.lblHintTitle.Size = new System.Drawing.Size(88, 37);
             this.lblHintTitle.TabIndex = 32;
@@ -440,24 +434,78 @@
             // 
             // mainFrame
             // 
-            this.mainFrame.Location = new System.Drawing.Point(590, 62);
+            this.mainFrame.Location = new System.Drawing.Point(582, 62);
             this.mainFrame.Name = "mainFrame";
-            this.mainFrame.Size = new System.Drawing.Size(366, 382);
+            this.mainFrame.Size = new System.Drawing.Size(364, 382);
             this.mainFrame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.mainFrame.TabIndex = 33;
             this.mainFrame.TabStop = false;
+            // 
+            // lblWins
+            // 
+            this.lblWins.AutoSize = true;
+            this.lblWins.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblWins.Location = new System.Drawing.Point(12, 597);
+            this.lblWins.Name = "lblWins";
+            this.lblWins.Size = new System.Drawing.Size(59, 37);
+            this.lblWins.TabIndex = 34;
+            this.lblWins.Text = "W:";
+            // 
+            // lblLosses
+            // 
+            this.lblLosses.AutoSize = true;
+            this.lblLosses.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLosses.Location = new System.Drawing.Point(366, 597);
+            this.lblLosses.Name = "lblLosses";
+            this.lblLosses.Size = new System.Drawing.Size(46, 37);
+            this.lblLosses.TabIndex = 34;
+            this.lblLosses.Text = "L:";
+            // 
+            // txtbWins
+            // 
+            this.txtbWins.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbWins.Location = new System.Drawing.Point(77, 594);
+            this.txtbWins.Name = "txtbWins";
+            this.txtbWins.ReadOnly = true;
+            this.txtbWins.Size = new System.Drawing.Size(44, 44);
+            this.txtbWins.TabIndex = 35;
+            this.txtbWins.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtbLosses
+            // 
+            this.txtbLosses.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbLosses.Location = new System.Drawing.Point(418, 594);
+            this.txtbLosses.Name = "txtbLosses";
+            this.txtbLosses.ReadOnly = true;
+            this.txtbLosses.Size = new System.Drawing.Size(44, 44);
+            this.txtbLosses.TabIndex = 35;
+            this.txtbLosses.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(153, 603);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(195, 29);
+            this.label2.TabIndex = 36;
+            this.label2.Text = "< Your Score  >";
             // 
             // hangman
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1030, 741);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtbLosses);
+            this.Controls.Add(this.txtbWins);
+            this.Controls.Add(this.lblLosses);
+            this.Controls.Add(this.lblWins);
             this.Controls.Add(this.mainFrame);
             this.Controls.Add(this.lblHintTitle);
             this.Controls.Add(this.lblHintText);
             this.Controls.Add(this.txtbWord);
             this.Controls.Add(this.btnGiveUp);
-            this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnY);
             this.Controls.Add(this.btnT);
@@ -525,7 +573,6 @@
         private System.Windows.Forms.Button btnY;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnZ;
-        private System.Windows.Forms.Button btnGenerate;
         private System.Windows.Forms.Button btnGiveUp;
         private System.Windows.Forms.TextBox txtbWord;
         private WordsDataSet wordsDataSet;
@@ -535,6 +582,11 @@
         private System.Windows.Forms.Label lblHintText;
         private System.Windows.Forms.Label lblHintTitle;
         private System.Windows.Forms.PictureBox mainFrame;
+        private System.Windows.Forms.Label lblWins;
+        private System.Windows.Forms.Label lblLosses;
+        private System.Windows.Forms.TextBox txtbWins;
+        private System.Windows.Forms.TextBox txtbLosses;
+        private System.Windows.Forms.Label label2;
     }
 }
 
