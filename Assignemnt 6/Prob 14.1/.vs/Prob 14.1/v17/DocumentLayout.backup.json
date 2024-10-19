@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "S:\\Coding\\Projects\\cs392-team\\Assignemnt 6\\Prob 14.1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF04B2A-7285-4CC1-83DD-8041A6FA1DB7}|Prob 14.1\\Prob 14.1.csproj|s:\\coding\\projects\\cs392-team\\assignemnt 6\\prob 14.1\\prob 14.1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BAF04B2A-7285-4CC1-83DD-8041A6FA1DB7}|Prob 14.1\\Prob 14.1.csproj|solutionrelative:prob 14.1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF04B2A-7285-4CC1-83DD-8041A6FA1DB7}|Prob 14.1\\Prob 14.1.csproj|s:\\coding\\projects\\cs392-team\\assignemnt 6\\prob 14.1\\prob 14.1\\random.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BAF04B2A-7285-4CC1-83DD-8041A6FA1DB7}|Prob 14.1\\Prob 14.1.csproj|solutionrelative:prob 14.1\\random.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BAF04B2A-7285-4CC1-83DD-8041A6FA1DB7}|Prob 14.1\\Prob 14.1.csproj|s:\\coding\\projects\\cs392-team\\assignemnt 6\\prob 14.1\\prob 14.1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BAF04B2A-7285-4CC1-83DD-8041A6FA1DB7}|Prob 14.1\\Prob 14.1.csproj|solutionrelative:prob 14.1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "random.txt",
+              "DocumentMoniker": "S:\\Coding\\Projects\\cs392-team\\Assignemnt 6\\Prob 14.1\\Prob 14.1\\random.txt",
+              "RelativeDocumentMoniker": "Prob 14.1\\random.txt",
+              "ToolTip": "S:\\Coding\\Projects\\cs392-team\\Assignemnt 6\\Prob 14.1\\Prob 14.1\\random.txt",
+              "RelativeToolTip": "Prob 14.1\\random.txt",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAowGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-10-19T06:55:39.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "S:\\Coding\\Projects\\cs392-team\\Assignemnt 6\\Prob 14.1\\Prob 14.1\\Form1.cs",
+              "RelativeDocumentMoniker": "Prob 14.1\\Form1.cs",
+              "ToolTip": "S:\\Coding\\Projects\\cs392-team\\Assignemnt 6\\Prob 14.1\\Prob 14.1\\Form1.cs",
+              "RelativeToolTip": "Prob 14.1\\Form1.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAswCwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T06:38:35.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "S:\\Coding\\Projects\\cs392-team\\Assignemnt 6\\Prob 14.1\\Prob 14.1\\Form1.cs",
+              "RelativeDocumentMoniker": "Prob 14.1\\Form1.cs",
+              "ToolTip": "S:\\Coding\\Projects\\cs392-team\\Assignemnt 6\\Prob 14.1\\Prob 14.1\\Form1.cs [Design]",
+              "RelativeToolTip": "Prob 14.1\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T06:37:48.368Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
