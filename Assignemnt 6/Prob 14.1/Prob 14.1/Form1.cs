@@ -33,7 +33,7 @@ namespace Prob_14._1
             // Step 4: Display the results in a ListBox
             foreach (int number in rangeNumbers)
             {
-                listBox1.Items.Add(number);
+                displayBox.Items.Add(number);
             }
         }
 
@@ -51,5 +51,9 @@ namespace Prob_14._1
             return numbers;
         }
 
+        private void displayBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
